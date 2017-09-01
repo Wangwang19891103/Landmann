@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C3A86CA9979ADDA67B43905D78536AAA811E4492",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C3A86CA9979ADDA67B43905D78536AAA811E4492" : 0,
+    "EC16A5FF4CA77701B7BAE46A8ED90F30DCDC333F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5C66F154-0F02-457E-86BD-4BEA92A2D85A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C3A86CA9979ADDA67B43905D78536AAA811E4492" : "Landmann\/",
+    "EC16A5FF4CA77701B7BAE46A8ED90F30DCDC333F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Landmann",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Landmann.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MobilingaGmbH\/Landmann.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3A86CA9979ADDA67B43905D78536AAA811E4492"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "www.mobilesprachen.de:Pons-Sprachenraetsel-Importer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC16A5FF4CA77701B7BAE46A8ED90F30DCDC333F"
+    }
+  ]
+}

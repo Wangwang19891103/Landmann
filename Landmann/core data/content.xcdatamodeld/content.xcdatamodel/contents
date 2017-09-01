@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Grilltip" representedClassName="Grilltip" syncable="YES">
+        <attribute name="menuTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="IngredientCategory" inverseName="ingredients" inverseEntity="IngredientCategory" syncable="YES"/>
+        <relationship name="entries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IngredientEntry" inverseName="ingredient" inverseEntity="IngredientEntry" syncable="YES"/>
+    </entity>
+    <entity name="IngredientCategory" representedClassName="IngredientCategory" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="category" inverseEntity="Ingredient" syncable="YES"/>
+    </entity>
+    <entity name="IngredientEntry" representedClassName="IngredientEntry" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="amountMax" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ingredient" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="entries" inverseEntity="Ingredient" syncable="YES"/>
+        <relationship name="recipe" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredients" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Keyword" representedClassName="Keyword" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipe" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="keywords" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipe" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="note" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES">
+        <attribute name="difficulty" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="grillType" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="imageFull" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageThumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="persons" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time1" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="time2" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="time3" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="tip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeCategory" inverseName="recipes" inverseEntity="RecipeCategory" syncable="YES"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IngredientEntry" inverseName="recipe" inverseEntity="IngredientEntry" syncable="YES"/>
+        <relationship name="keywords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Keyword" inverseName="recipe" inverseEntity="Keyword" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="recipe" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="RecipeCategory" representedClassName="RecipeCategory" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="category" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Grilltip" positionX="-288" positionY="-33" width="128" height="105"/>
+        <element name="Ingredient" positionX="360" positionY="63" width="128" height="118"/>
+        <element name="IngredientCategory" positionX="324" positionY="252" width="128" height="88"/>
+        <element name="IngredientEntry" positionX="162" positionY="-0" width="128" height="135"/>
+        <element name="Keyword" positionX="-126" positionY="330" width="128" height="75"/>
+        <element name="Note" positionX="-216" positionY="162" width="128" height="75"/>
+        <element name="Recipe" positionX="-18" positionY="-36" width="128" height="298"/>
+        <element name="RecipeCategory" positionX="153" positionY="417" width="128" height="88"/>
+    </elements>
+</model>

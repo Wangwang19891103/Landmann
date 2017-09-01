@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="UserNote" representedClassName="UserNote" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipe" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserRecipe" inverseName="note" inverseEntity="UserRecipe" syncable="YES"/>
+    </entity>
+    <entity name="UserRecipe" representedClassName="UserRecipe" syncable="YES">
+        <attribute name="added" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="baseScale" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="scale" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserNote" inverseName="recipe" inverseEntity="UserNote" syncable="YES"/>
+        <relationship name="shoppingEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserShoppingEntry" inverseName="recipe" inverseEntity="UserShoppingEntry" syncable="YES"/>
+    </entity>
+    <entity name="UserShoppingEntry" representedClassName="UserShoppingEntry" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="amountMax" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="checked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="ingredientNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipe" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserRecipe" inverseName="shoppingEntries" inverseEntity="UserRecipe" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserNote" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="UserRecipe" positionX="72" positionY="-27" width="128" height="148"/>
+        <element name="UserShoppingEntry" positionX="-135" positionY="-45" width="128" height="150"/>
+    </elements>
+</model>

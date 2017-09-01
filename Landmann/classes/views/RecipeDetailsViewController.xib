@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="6200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipeDetailsViewController">
+            <connections>
+                <outlet property="contentView" destination="2" id="40"/>
+                <outlet property="favoriteView" destination="58" id="88"/>
+                <outlet property="imageView" destination="3" id="23"/>
+                <outlet property="ingredientsView" destination="12" id="43"/>
+                <outlet property="notesView" destination="11" id="35"/>
+                <outlet property="scrollView" destination="38" id="41"/>
+                <outlet property="tipButton" destination="84" id="85"/>
+                <outlet property="view" destination="74" id="77"/>
+                <outlet property="webViewDummy" destination="A7f-uu-TRF" id="Mhq-Nv-PP7"/>
+                <outletCollection property="fontsizeButtons" destination="90" id="94"/>
+                <outletCollection property="fontsizeButtons" destination="91" id="95"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="74">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="38">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="2" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="A7f-uu-TRF">
+                                    <rect key="frame" x="0.0" y="200" width="320" height="280"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="84">
+                                    <rect key="frame" x="253" y="253" width="51" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Button" image="recipe_details_tip_button.png">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionShowTip" destination="-1" eventType="touchUpInside" id="86"/>
+                                    </connections>
+                                </button>
+                                <view opaque="NO" contentMode="scaleToFill" id="12" userLabel="View - Zutaten" customClass="IngredientsView">
+                                    <rect key="frame" x="38" y="0.0" width="282" height="346"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="recipe_details_ingredients_background.png" id="28" userLabel="ingredients background">
+                                            <rect key="frame" x="0.0" y="0.0" width="282" height="346"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="für" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="44">
+                                            <rect key="frame" x="179" y="17" width="24" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="line" textAlignment="center" minimumFontSize="17" id="46" userLabel="Text Field - 22">
+                                            <rect key="frame" x="203" y="16" width="24" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="12" id="51"/>
+                                            </connections>
+                                        </textField>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pers." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="45" userLabel="Label - Pers.">
+                                            <rect key="frame" x="231" y="17" width="49" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view opaque="NO" contentMode="scaleToFill" id="52">
+                                            <rect key="frame" x="2" y="48" width="277" height="221"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        </view>
+                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="61" userLabel="button submit">
+                                            <rect key="frame" x="59" y="277" width="158" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="Button" image="recipe_details_button_shopping.png">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="disabled" image="recipe_details_button_shopping_added.png"/>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="actionShopping:" destination="12" eventType="touchUpInside" id="62"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="67" userLabel="button toggle">
+                                            <rect key="frame" x="0.0" y="308" width="277" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="handleTap" destination="12" eventType="touchUpInside" id="69"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="addButton" destination="61" id="63"/>
+                                        <outlet property="background" destination="28" id="73"/>
+                                        <outlet property="contentView" destination="52" id="53"/>
+                                        <outlet property="delegate" destination="-1" id="42"/>
+                                        <outlet property="textField" destination="46" id="50"/>
+                                        <outlet property="toggleButton" destination="67" id="68"/>
+                                    </connections>
+                                </view>
+                                <view opaque="NO" contentMode="scaleToFill" id="11" userLabel="View - Notizen" customClass="NotesView">
+                                    <rect key="frame" x="14" y="87" width="198" height="155"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" image="recipe_details_note_background.png" id="27" userLabel="note background">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="155"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="29">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="115"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="11" id="34"/>
+                                            </connections>
+                                        </textView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="70" userLabel="bottom toggle">
+                                            <rect key="frame" x="0.0" y="119" width="198" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="handleTap" destination="11" eventType="touchUpInside" id="72"/>
+                                            </connections>
+                                        </button>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="recipe_details_note_indicator.png" id="96">
+                                            <rect key="frame" x="45" y="130" width="15" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="32"/>
+                                        <outlet property="indicator" destination="96" id="97"/>
+                                        <outlet property="textView" destination="29" id="33"/>
+                                        <outlet property="toggleButton" destination="70" id="71"/>
+                                    </connections>
+                                </view>
+                                <imageView contentMode="scaleToFill" id="3" userLabel="recipe image">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" id="58" userLabel="favorit" customClass="FavoriteView">
+                                    <rect key="frame" x="270" y="6" width="43" height="86"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="bottom" image="recipe_details_favorite.png" id="59">
+                                            <rect key="frame" x="0.0" y="0.0" width="43" height="77"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="87"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="90" userLabel="fontsize minus">
+                    <rect key="frame" x="8" y="445" width="38" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="recipe_details_fontsize_minus.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionFontsizeMinus" destination="-1" eventType="touchUpInside" id="92"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="91" userLabel="fontsize plus">
+                    <rect key="frame" x="46" y="445" width="38" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="recipe_details_fontsize_plus.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionFontsizePlus" destination="-1" eventType="touchUpInside" id="93"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="11" y="172"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recipe_details_button_shopping.png" width="158" height="29"/>
+        <image name="recipe_details_button_shopping_added.png" width="158" height="29"/>
+        <image name="recipe_details_favorite.png" width="43" height="77"/>
+        <image name="recipe_details_fontsize_minus.png" width="38" height="35"/>
+        <image name="recipe_details_fontsize_plus.png" width="38" height="35"/>
+        <image name="recipe_details_ingredients_background.png" width="282" height="346"/>
+        <image name="recipe_details_note_background.png" width="198" height="157"/>
+        <image name="recipe_details_note_indicator.png" width="15" height="16"/>
+        <image name="recipe_details_tip_button.png" width="51" height="43"/>
+    </resources>
+</document>

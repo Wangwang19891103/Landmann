@@ -1,0 +1,24 @@
+a AppDelegateIpad
+a MainWindow~ipad.xib
+m MainMenuViewController
+m RecipeCategoriesViewController
+a RecipeStreamViewController
+m RecipeMenuViewController
+m RecipeDetailsViewController
+a ShoppingIngredientsViewController
+m ShoppingRecipesViewController.m
+a CustomNavigationController
+a InvitationsListViewControllerIpad (m, xib)
+a InvitationsEditViewController~ipad.xib
+m InvitationsEditViewController
+m UserProfileViewController.m
+a UserProfileViewController~ipad.xib
+a GrilltipsDetailViewControllerIpad
+m ImprintViewController
+
+
+// IDIOM
+
+// TEST
+
+// PROBLEM

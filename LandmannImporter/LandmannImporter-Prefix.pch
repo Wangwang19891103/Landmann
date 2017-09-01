@@ -1,0 +1,34 @@
+//
+// Prefix header for all source files of the 'LandmannImporter' target in the 'LandmannImporter' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "NSArray+Extensions.h"
+
+#import "DataManager.h"
+#import "LogManager.h"
+
+#import "Ingredient.h"
+#import "IngredientCategory.h"
+#import "IngredientEntry.h"
+#import "Keyword.h"
+#import "Recipe.h"
+#import "RecipeCategory.h"
+#import "Grilltip.h"
+
+#endif
+
+
+
+// #define error(text) { NSLog(@"[%C, %d, %C] %@", __FILE__, __LINE__, __FUNCTION__, text); exit(1); }

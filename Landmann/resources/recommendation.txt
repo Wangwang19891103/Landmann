@@ -1,0 +1,4 @@
+<p>Hallo, ich habe neulich die Grill-App von LANDMANN geladen. Neben leckeren Rezepten bietet sie die Möglichkeit eigene Einladungskarten zu erstellen.<br/>
+Schau sie dir doch mal an. Gibt’s kostenlos im Appstore.</p>
+
+<a href="http://itunes.apple.com/app/id645725836">AppStore-Link</a>

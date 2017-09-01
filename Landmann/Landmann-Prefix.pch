@@ -1,0 +1,82 @@
+//
+// Prefix header for all source files of the 'Landmann' target in the 'Landmann' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#import "ResourceManager.h"
+#import "DataManager.h"
+#import "LogManager.h"
+#import "ContentDataManager.h"
+
+#import "NSArray+Extensions.h"
+#import "UIImage+Extensions.h"
+#import "UIView+Extensions.h"
+#import "UIColor+Extensions.h"
+#import "CGExtensions.h"
+
+#import "Ingredient.h"
+#import "IngredientCategory.h"
+#import "IngredientEntry.h"
+#import "Keyword.h"
+#import "Recipe.h"
+#import "RecipeCategory.h"
+#import "Note.h"
+#import "Grilltip.h"
+
+#import "UserRecipe.h"
+#import "UserShoppingEntry.h"
+#import "UserNote.h"
+
+#import "TranslateIdiom.h"
+#import "Alerts.h"
+#import "AlertManager.h"
+#import "SettingsManager.h"
+
+#import "AppDelegateIpad.h"
+
+
+
+#import "ViewTreeInspectorController.h"
+
+#endif
+
+
+
+// constants
+
+#define TABLEVIEW_CELL_DESELECTION_DELAY 0.2
+
+
+// paths
+
+#define RECIPE_IMAGES_THUMB_IPHONE      @"images/iPhone/thumb"
+#define RECIPE_IMAGES_LARGE_IPHONE      @"images/iPhone/large"
+#define RECIPE_IMAGES_FULL_IPHONE       @"images/iPhone/full"
+
+#define RECIPE_IMAGES_THUMB_IPAD      @"images/iPad/thumb"
+#define RECIPE_IMAGES_LARGE_IPAD      @"images/iPad/large"
+#define RECIPE_IMAGES_FULL_IPAD       @"images/iPad/full"
+#define RECIPE_IMAGES_STREAM_IPAD     @"images/iPad/stream"
+
+
+#define RECIPE_IMAGES_THUMB     (is_ipad)?RECIPE_IMAGES_THUMB_IPAD:RECIPE_IMAGES_THUMB_IPHONE
+#define RECIPE_IMAGES_LARGE     (is_ipad)?RECIPE_IMAGES_LARGE_IPAD:RECIPE_IMAGES_LARGE_IPHONE
+#define RECIPE_IMAGES_FULL      (is_ipad)?RECIPE_IMAGES_FULL_IPAD:RECIPE_IMAGES_FULL_IPHONE
+
+#define NSLog(...)
+
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[InvitationsEditViewController viewDidLoad]:InvitationsEditViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_data">
+            </PersistentString>
+            <PersistentString
+               value = "[_data objectForKey:@&quot;Elements.OptionalImage&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingIngredientsViewControllerIpad tableView:commitEditingStyle:forRowAtIndexPath:]:ShoppingIngredientsViewControllerIpad.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+            <PersistentString
+               value = "_rightData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[IngredientsView didMoveToSuperview]:IngredientsView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.background">
+            </PersistentString>
+            <PersistentString
+               value = "self.background.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RecipeDetailsViewController viewDidLoad]:RecipeDetailsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imageView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InvitationsCardFullscreenViewController viewDidLoad]:InvitationsCardFullscreenViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_image.size">
+            </PersistentString>
+            <PersistentString
+               value = "scrollView.contentSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingIngredientsViewController tableView:commitEditingStyle:forRowAtIndexPath:]:ShoppingIngredientsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.subviews[2]">
+            </PersistentString>
+            <PersistentString
+               value = "cell.subviews[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContentDataManager addRecipe:toShoppingListWithScale:]:ContentDataManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "entry">
+            </PersistentString>
+            <PersistentString
+               value = "entry.title">
+            </PersistentString>
+            <PersistentString
+               value = "recipe.ingredients">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingIngredientsViewController loadData]:ShoppingIngredientsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "shoppingEntry.amount">
+            </PersistentString>
+            <PersistentString
+               value = "ingredient.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InvitationsEditViewController invitationTextViewDidBeginEditing:]:InvitationsEditViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "ptextView.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RotaryKnob drawRect:]:RotaryKnob.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_knobImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GrilltipsMenuViewController init]:GrilltipsMenuViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InvitationsListViewController viewDidLoad]:InvitationsListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "largeImage.layer.mask">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ContentDataManager deleteShoppingEntries:]:ContentDataManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "recipe.shoppingEntries">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RezeptViewController viewDidLoad]:RezeptViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "entry.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingIngredientsViewController tableView:viewForHeaderInSection:]:ShoppingIngredientsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingRecipesViewController createCells]:ShoppingRecipesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RezeptViewController saveNotes]:RezeptViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_recipe.notes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingIngredientsViewControllerIpad loadData]:ShoppingIngredientsViewControllerIpad.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sectionHeight">
+            </PersistentString>
+            <PersistentString
+               value = "currentHeight">
+            </PersistentString>
+            <PersistentString
+               value = "rightArray">
+            </PersistentString>
+            <PersistentString
+               value = "totalHeight">
+            </PersistentString>
+            <PersistentString
+               value = "height2">
+            </PersistentString>
+            <PersistentString
+               value = "diff">
+            </PersistentString>
+            <PersistentString
+               value = "rowArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InvitationTextView initWithCoder:]:InvitationTextView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[IngredientsView updateIngredients]:IngredientsView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.contentView.autoresizingMask">
+            </PersistentString>
+            <PersistentString
+               value = "self.background.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingIngredientsViewControllerIpad numberOfSectionsInTableView:]:ShoppingIngredientsViewControllerIpad.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_rightTableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InvitationCardRenderer createPreviewImageFromImage:]:InvitationCardRenderer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "image.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate importRecipes]:AppDelegate.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "ingName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingRecipesViewController shoppingRecipesCellRequestsDeletion:]:ShoppingRecipesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.indexPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InvitationsEditViewController recipeImageViewController:didPickRecipeImage:]:InvitationsEditViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

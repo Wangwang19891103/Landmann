@@ -1,0 +1,99 @@
+UI Problems iPad:
+
+- general
+##** status bar has to go
+##** nav bar
+##** home button too high on fullscreen views
+-- table cell delete swipe gesture
+!!*** animation looks odd (at least on recipes list, iphone)
+!!*** using edit button, then left deletion icons will overlap the right deletion buttons (animated)
+- Main menu
+-- left frame
+##*** Navigation bar
+- Recipe Categories
+##** foreground image background (white)
+- Recipe stream
+-- items
+##*** text label line break
+- Shopping list
+-- ingredients list
+##*** tableview cell background (white)
+- Grill tips
+-- right frame
+!!*** text paragraph too long / background (white)
+- Invitations
+-- preview (right frame)
+##*** preview image too large (high)
+-- edit frame
+*** recipe image list (design)
+!!*** "photo album" makes status bar appear and stick
+- Settings
+##** foreground image too high
+##** elements too high (irregularly)
+
+
+UI Problems iPhone:
+
+- general
+-- tab bar
+*** selected text is blue
+*** touch area for buttons too high up (5-10 pixels)
+- Recipe details
+-- tip fullscreen 
+*** background too dark?
+-- Favorite
+*** tapping doesnt work
+
+
+
+Crashes:
+
+- Invitations
+-- Photo album
+*** will crash when trying to display "ContentUnavailableView". Problem with layout constraints. Happened right after allowing app to use photo album.
+
+
+Todo:
+
+- Invitations
+** Test camera on iPad/iPhone
+- Recommendation mail
+** test if setting subject works in ios7
+
+
+
+comments:
+
+- nav bar problem
+** view controller behind using fullscreen mode, shining thru translucent navbar
+** nav bar needs to be opaque again
+** nav bar being too high
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IOS7
+2013-09-04 16:27:59.391 Landmann[8101:a0b] textView frame: {{2, 303}, {339, 225}}
+2013-09-04 16:27:59.394 Landmann[8101:a0b] contentSize: {339, 217}
+2013-09-04 16:27:59.396 Landmann[8101:a0b] textView frame: {{17, 318}, {339, 217}}
+
+IOS6
+2013-09-04 16:29:04.936 Landmann[8175:c07] textView frame: {{2, 303}, {339, 225}}
+2013-09-04 16:29:04.940 Landmann[8175:c07] contentSize: {309, 249}
+2013-09-04 16:29:04.940 Landmann[8175:c07] textView frame: {{17, 318}, {309, 249}}
+
+IOS7 changes
+2013-09-04 16:39:50.993 Landmann[8368:a0b] textView frame: {{2, 303}, {339, 225}}
+2013-09-04 16:39:50.998 Landmann[8368:a0b] contentSize: {339, 217}
+2013-09-04 16:39:51.000 Landmann[8368:a0b] textView frame: {{17, 318}, {302, 226}}
